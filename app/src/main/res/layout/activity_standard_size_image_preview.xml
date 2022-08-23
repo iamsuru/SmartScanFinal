@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StandardSizeImagePreview">
+    <FrameLayout
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_gravity="top|left"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_baseline_arrow_back_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/dropdown_menu"
+            android:layout_gravity="top|right"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_baseline_more_vert_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:scaleType="fitCenter"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <!--<com.google.android.material.button.MaterialButton
+        android:id="@+id/retakeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="37dp"
+        android:backgroundTint="#CF1B0E"
+        android:text="Retake"
+        android:textColor="@color/white"
+        app:icon="@drawable/ic_baseline_refresh_24"
+        app:iconGravity="textEnd" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/uploadButton"
+        android:text="Upload"
+        android:layout_marginBottom="0dp"
+        app:icon="@drawable/ic_baseline_cloud_upload_24"
+        app:iconGravity="textEnd"
+        android:layout_gravity="bottom|center"
+        android:textColor="@color/white"
+        android:backgroundTint="#FFC107"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>-->
+
+
+    <Button
+        android:id="@+id/retakeButton"
+        android:text="Retake"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="40dp"
+        android:backgroundTint="#F44336"
+        android:drawableRight="@drawable/ic_baseline_refresh_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/uploadButton"
+        android:text="Upload"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#FFC107"
+        android:drawableRight="@drawable/ic_baseline_cloud_upload_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</FrameLayout>

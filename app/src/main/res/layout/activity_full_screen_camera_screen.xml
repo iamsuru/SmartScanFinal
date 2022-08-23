@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FullScreenCameraScreen">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewPane"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.camera.view.PreviewView>
+
+
+    <FrameLayout
+        android:id="@+id/action_content"
+        android:background="#1F000000"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageButton
+            android:id="@+id/flash_OFF"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_baseline_flash_off_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/flash_ON"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_baseline_flash_on_24"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/flash_AUTO"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_baseline_flash_auto_24"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/high_quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/ic_baseline_hdr_off_24" />
+
+        <ImageButton
+            android:id="@+id/standard_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="110dp"
+            android:background="@drawable/ic_baseline_fullscreen_exit_24" />
+
+        <ImageButton
+            android:id="@+id/dropdown_menu"
+            android:layout_gravity="top|right"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_baseline_more_vert_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/footer"
+        android:background="#1F000000"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageButton
+            android:id="@+id/captureButton"
+            android:layout_marginBottom="60dp"
+            android:layout_gravity="bottom|center"
+            android:background="@drawable/ic_baseline_camera_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+
+</FrameLayout>

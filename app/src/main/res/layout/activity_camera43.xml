@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CameraActivityFullScreen">
+
+  <androidx.camera.view.PreviewView
+      android:id="@+id/previewPane"
+      app:scaleType="fitStart"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+  </androidx.camera.view.PreviewView>
+
+  <ImageView
+      android:id="@+id/imageView"
+      android:scaleType="fitCenter"
+      android:backgroundTint="@color/white"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+
+  <ImageButton
+      android:layout_gravity="top|left"
+      android:layout_marginLeft="10dp"
+      android:layout_marginTop="20dp"
+      android:id="@+id/flash_ON"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/ic_baseline_flash_on_24"
+      android:visibility="invisible" />
+
+  <ImageButton
+      android:id="@+id/flash_OFF"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="top|left"
+      android:layout_marginLeft="10dp"
+      android:layout_marginTop="20dp"
+      android:background="@drawable/ic_baseline_flash_off_24" />
+  <ImageButton
+      android:layout_gravity="top|left"
+      android:layout_marginLeft="10dp"
+      android:layout_marginTop="20dp"
+      android:id="@+id/flash_AUTO"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/ic_baseline_flash_auto_24"
+      android:visibility="invisible" />
+
+  <TextView
+      android:layout_gravity="top|center"
+      android:layout_marginTop="20dp"
+      android:text=" SmartScan "
+      android:textColor="@color/white"
+      android:textStyle="bold|italic"
+      android:fontFamily="@font/logo_name"
+      android:textSize="25dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+
+  <ImageButton
+      android:id="@+id/moreDetails"
+      android:layout_gravity="top|right"
+      android:layout_marginRight="10dp"
+      android:layout_marginTop="20dp"
+      android:background="@drawable/ic_baseline_more_vert_24"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+
+  <ImageButton
+      android:id="@+id/captureButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center|bottom"
+      android:layout_marginBottom="80dp"
+      android:background="@drawable/ic_baseline_camera_24" />
+  <com.google.android.material.button.MaterialButton
+      android:id="@+id/uploadButton"
+      android:text="Upload"
+      app:icon="@drawable/ic_baseline_cloud_upload_24"
+      app:iconGravity="textEnd"
+      android:layout_gravity="bottom|center"
+      android:visibility="invisible"
+      android:textColor="@color/white"
+      android:backgroundTint="#FFC107"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+
+  <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/changeRatio"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:backgroundTint="#80000000"
+      android:background="@drawable/circle"
+      android:text="16:9"
+      android:textColor="@color/white"
+      android:textStyle="bold"
+      android:layout_gravity="bottom|right"
+      android:layout_marginEnd="70dp"
+      android:layout_marginBottom="95dp"
+      android:textSize="7.4285sp"
+      tools:ignore="InvalidId" />
+</FrameLayout>
